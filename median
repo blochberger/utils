@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+import fileinput
+
+
+def median(values):
+	values.sort()
+	return values[int(len(values) / 2)]
+
+
+def main():
+	lines = list(map(str.strip, list(fileinput.input())))
+	print(median(lines))
+
+
+if __name__ == '__main__':
+	main()

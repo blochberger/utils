@@ -19,3 +19,10 @@ $ echo {1..10} | tr ' ' '\n' | median
 5
 ```
 
+Get a clean file path:
+
+```sh
+$ cleanpath /foo/bar/../bar////
+/foo/bar
+```
+
